@@ -11,12 +11,11 @@
       background: #f6f2ea;
       color: #1a1a1a;
     }
-.container {
-  display: flex;
-  flex-direction: row-reverse;
-  max-width: 1200px;
-  margin: auto;
-}
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+    }
 
     .posts {
       width: 65%;
@@ -69,18 +68,6 @@
 <body>
 
 <div class="container">
-  <div class="posts">
-    <div class="post">
-      <h2>First Piece</h2>
-      <p>A short preview of the essay goes here. Just enough to pull someone in.</p>
-    </div>
-
-    <div class="post">
-      <h2>Second Piece</h2>
-      <p>Another quiet fragment. Another reason to scroll.</p>
-    </div>
-  </div>
-
   <div class="sidebar">
     <h1>ATKH</h1>
     <p>hey. this is an archive. essays, fragments, unfinished things.</p>
@@ -88,7 +75,20 @@
       <div id="date"></div>
     </div>
   </div>
+
+  <div class="posts">
+    <div class="post">
+      <h2>First Piece</h2>
+      <p>A short preview of the essay goes here.</p>
+    </div>
+
+    <div class="post">
+      <h2>Second Piece</h2>
+      <p>Another quiet fragment.</p>
+    </div>
+  </div>
 </div>
+
 
 <script>
   document.getElementById("date").innerText =
