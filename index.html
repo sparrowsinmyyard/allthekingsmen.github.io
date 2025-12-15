@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATKH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f6f2ea;
+      color: #1a1a1a;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .posts {
+      width: 65%;
+      padding: 3rem 2rem;
+    }
+    .post {
+      margin-bottom: 3rem;
+    }
+    .post h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.6rem;
+    }
+    .post p {
+      margin: 0;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+    .sidebar {
+      width: 35%;
+      padding: 3rem 2rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    .sidebar h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
+    }
+    .meta {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: relative;
+        height: auto;
+      }
+      .posts, .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="posts">
+    <div class="post">
+      <h2>First Piece</h2>
+      <p>A short preview of the essay goes here. Just enough to pull someone in.</p>
+    </div>
+
+    <div class="post">
+      <h2>Second Piece</h2>
+      <p>Another quiet fragment. Another reason to scroll.</p>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h1>ATKH</h1>
+    <p>hey. this is an archive. essays, fragments, unfinished things.</p>
+    <div class="meta">
+      <div id="date"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("date").innerText =
+    new Date().toLocaleString();
+</script>
+
+</body>
+</html>
