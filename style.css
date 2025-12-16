@@ -33,7 +33,7 @@ body {
 /* description + date */
 .sidebar p,
 .meta {
-  font-family: system-ui, sans-serif;
+  font-family: fangsong;
   font-size: 0.95rem;
   line-height: 1.6;
   opacity: 0.75;
