@@ -141,12 +141,23 @@ body {
   position: relative;
 }
 
-/* vertical divider */
-.footer-col:not(:last-child)::after {
+/* divider after ABOUT */
+.footer-col:nth-child(1)::after {
   content: "";
   position: absolute;
   top: 20%;
-  right: -1.5rem;
+  right: -1.2rem;   /* ← move this one */
+  width: 1px;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* divider after ELSEWHERE */
+.footer-col:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -1.8rem;   /* ← move this one separately */
   width: 1px;
   height: 60%;
   background: rgba(0, 0, 0, 0.15);
