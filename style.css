@@ -1,8 +1,9 @@
 /* -------- GLOBAL -------- */
 body {
   margin: 0;
-  background: #bdaa8c; /* your cozy bg */
+  background: #bdaa8c;
   color: #1a1a1a;
+  overflow-x: hidden;
 }
 
 /* -------- LAYOUT -------- */
@@ -11,40 +12,21 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   align-items: flex-start;
+  overflow: visible;
 }
 
-/* -------- LEFT SIDEBAR -------- */
+/* -------- SIDEBAR -------- */
 .sidebar {
   width: 35%;
   padding: 3rem 1rem;
   position: sticky;
-  top: 0;
+  top: 2rem;
   height: fit-content;
   box-sizing: border-box;
-  border-right: 2px solid: 
-}
-
-/* ATKH */
-.sidebar h1 {
-  font-family: "Libre Baskerville", serif;
-  font-size: 2.4rem;
-  letter-spacing: 0.08em;
-  margin-top: 0;
-}
-
-/* description + date */
-.sidebar p,
-.meta {
-  font-family: fangsong;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.75;
-}
-
-.sidebar {
   position: relative;
 }
 
+/* floating divider */
 .sidebar::after {
   content: "";
   position: absolute;
@@ -55,22 +37,40 @@ body {
   background: rgba(0, 0, 0, 0.12);
 }
 
-/* -------- RIGHT CONTENT (SCROLL) -------- */
+.sidebar h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+}
+
+.sidebar p,
+.meta {
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* -------- CONTENT -------- */
 .content {
   width: 65%;
   padding: 3rem 1rem;
   box-sizing: border-box;
 }
 
-/* piece title */
+.post {
+  margin-bottom: 3rem;
+}
+
 .post h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.7rem;
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .post h2 a {
-  color: #1a1a1a;       /* same as body text */
+  color: inherit;
   text-decoration: none;
 }
 
@@ -78,8 +78,6 @@ body {
   text-decoration: underline;
 }
 
-
-/* preview text */
 .post p {
   font-family: "Spectral", serif;
   line-height: 1.7;
@@ -87,9 +85,81 @@ body {
   margin: 0;
 }
 
-/* spacing between pieces */
-.post {
-  margin-bottom: 3rem;
+/* -------- FOOTER -------- */
+.site-footer {
+  margin-top: 4rem;
+  padding: 2.1rem 1.5rem;
+  background: #efe4cf;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.footer-col {
+  position: relative;
+}
+
+.footer-col:nth-child(1)::after,
+.footer-col:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -1.5rem;
+  width: 1px;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.footer-col h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col p,
+.footer-col li {
+  font-family: "Spectral", serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.footer-col a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* subscribe row */
+.subscribe-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.subscribe-row input {
+  flex: 1;
+  padding: 0.35rem;
+  background: transparent;
+  border: 1px solid #999;
+}
+
+.subscribe-row button {
+  padding: 0.3rem 0.6rem;
+  background: none;
+  border: 1px solid #999;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* -------- MOBILE -------- */
@@ -99,122 +169,19 @@ body {
   }
 
   .sidebar {
-    position: relative;
-    height: auto;
     width: 100%;
+    position: relative;
   }
 
   .content {
     width: 100%;
   }
-}
 
-/* -------- FOOTER -------- */
-.site-footer {
-  margin-top: 4rem;
-  padding: 2.1rem 1.5rem;
-  background: #efe4cf; /* slightly different from main bg */
-  border-top: 1px solid;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-.subscribe-row {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.subscribe-row input {
-  flex: 1;
-}
-
-
-/* footer headings */
-.footer-col h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.05em;
-}
-
-/* footer body text */
-.footer-col p,
-.footer-col li {
-  font-family: "Spectral", serif;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.8;
-}
-
-/* links */
-.footer-col a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-col a:hover {
-  text-decoration: underline;
-}
-
-.footer-col {
-  position: relative;
-}
-
-/* divider after ABOUT */
-.footer-col:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  top: 20%;
-  right: -1.2rem;   /* ← move this one */
-  width: 1px;
-  height: 60%;
-  background: rgba(0, 0, 0, 0.15);
-}
-
-/* divider after ELSEWHERE */
-.footer-col:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  top: 20%;
-  right: -1.8rem;   /* ← move this one separately */
-  width: 1px;
-  height: 60%;
-  background: rgba(0, 0, 0, 0.15);
-}
-
-
-/* email input (inactive for now) */
-.footer-col input {
-  width: 60%;
-  padding: 0.35rem;
-  margin-top: 0.5rem;
-  margin-right: 2rem;
-  background: transparent;
-  border: 1px solid #999;
-  font-family: inherit;
-}
-
-.footer-col button {
-  margin-top: 0.5rem;
-  padding: 0.3rem 0.6rem;
-  background: none;
-  border: 1px solid #999;
-  font-family: inherit;
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* mobile */
-@media (max-width: 800px) {
   .footer-inner {
     grid-template-columns: 1fr;
   }
-}
 
+  .footer-col::after {
+    display: none;
+  }
+}
