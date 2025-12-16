@@ -97,7 +97,7 @@ body {
 /* -------- FOOTER -------- */
 .site-footer {
   margin-top: 4rem;
-  padding: 2.5rem 2rem;
+  padding: 2.1rem 1.5rem;
   background: #efe4cf; /* slightly different from main bg */
   border-top: 1px solid;
 }
@@ -166,9 +166,10 @@ body {
 
 /* email input (inactive for now) */
 .footer-col input {
-  width: 100%;
+  width: 60%;
   padding: 0.35rem;
   margin-top: 0.5rem;
+  margin-right: 11rem;
   background: transparent;
   border: 1px solid #999;
   font-family: inherit;
