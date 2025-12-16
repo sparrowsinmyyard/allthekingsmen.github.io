@@ -110,6 +110,17 @@ body {
   gap: 3rem;
 }
 
+.subscribe-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.subscribe-row input {
+  flex: 1;
+}
+
+
 /* footer headings */
 .footer-col h3 {
   font-family: "Cormorant Garamond", serif;
