@@ -92,3 +92,73 @@ body {
     width: 100%;
   }
 }
+
+/* -------- FOOTER -------- */
+.site-footer {
+  margin-top: 6rem;
+  padding: 4rem 2rem;
+  background: #efe4cf; /* slightly different from main bg */
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* footer headings */
+.footer-col h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* footer body text */
+.footer-col p,
+.footer-col li {
+  font-family: "Spectral", serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* links */
+.footer-col a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* email input (inactive for now) */
+.footer-col input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid #999;
+  font-family: inherit;
+}
+
+.footer-col button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: none;
+  border: 1px solid #999;
+  font-family: inherit;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
