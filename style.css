@@ -53,6 +53,16 @@ body {
   margin: 0 0 0.5rem 0;
 }
 
+.post h2 a {
+  color: #1a1a1a;       /* same as body text */
+  text-decoration: none;
+}
+
+.post h2 a:hover {
+  text-decoration: underline;
+}
+
+
 /* preview text */
 .post p {
   font-family: "Spectral", serif;
