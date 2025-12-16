@@ -1,0 +1,84 @@
+/* -------- GLOBAL -------- */
+body {
+  margin: 0;
+  background: #f6f2ea; /* your cozy bg */
+  color: #1a1a1a;
+}
+
+/* -------- LAYOUT -------- */
+.layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -------- LEFT SIDEBAR -------- */
+.sidebar {
+  width: 35%;
+  padding: 3rem 2rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* ATKH */
+.sidebar h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+}
+
+/* description + date */
+.sidebar p,
+.meta {
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* -------- RIGHT CONTENT (SCROLL) -------- */
+.content {
+  width: 65%;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+/* piece title */
+.post h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  margin: 0 0 0.5rem 0;
+}
+
+/* preview text */
+.post p {
+  font-family: "Spectral", serif;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* spacing between pieces */
+.post {
+  margin-bottom: 3rem;
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 800px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
