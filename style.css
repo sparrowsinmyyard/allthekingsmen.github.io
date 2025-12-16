@@ -98,6 +98,7 @@ body {
   margin-top: 4rem;
   padding: 2.5rem 2rem;
   background: #efe4cf; /* slightly different from main bg */
+  border-top: 1px solid;
 }
 
 .footer-inner {
