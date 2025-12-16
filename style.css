@@ -15,11 +15,12 @@ body {
 /* -------- LEFT SIDEBAR -------- */
 .sidebar {
   width: 35%;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   position: sticky;
   top: 0;
   height: 100vh;
   box-sizing: border-box;
+  border-right: 2px solid: 
 }
 
 /* ATKH */
@@ -42,7 +43,7 @@ body {
 /* -------- RIGHT CONTENT (SCROLL) -------- */
 .content {
   width: 65%;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   box-sizing: border-box;
 }
 
