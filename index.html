@@ -25,10 +25,17 @@
 
   </div>
 
-  <script>
+<script>
+  function updateDateTime() {
+    const now = new Date();
     document.getElementById("date").innerText =
-      new Date().toLocaleString();
-  </script>
+      now.toLocaleString();
+  }
+
+  updateDateTime();                 // run once immediately
+  setInterval(updateDateTime, 1000); // update every second
+</script>
+
 <script src="essays.js"></script>
 <script src="script.js"></script>
 
