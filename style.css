@@ -137,6 +137,22 @@ body {
   text-decoration: underline;
 }
 
+.footer-col {
+  position: relative;
+}
+
+/* vertical divider */
+.footer-col:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -1.5rem;
+  width: 1px;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
 /* email input (inactive for now) */
 .footer-col input {
   width: 100%;
