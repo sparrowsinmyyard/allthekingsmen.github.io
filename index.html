@@ -4,73 +4,72 @@
   <meta charset="UTF-8" />
   <title>ATKH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Libre+Baskerville:wght@400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Libre+Baskerville:wght@400&family=Spectral:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- MAIN STICKY AREA -->
   <div class="layout">
 
-    <!-- LEFT: FIXED INFO -->
     <aside class="sidebar">
       <h1>ATKH</h1>
       <p>hey. this is an archive. essays, fragments, unfinished things.</p>
       <div class="meta" id="date"></div>
     </aside>
 
-    <!-- RIGHT: SCROLLING POSTS -->
-    
-      <main class="content" id="posts"></main>
+    <main class="content" id="posts"></main>
 
   </div>
 
-<script>
-  function updateDateTime() {
-    const now = new Date();
-    document.getElementById("date").innerText =
-      now.toLocaleString();
-  }
-
-  updateDateTime();                 // run once immediately
-  setInterval(updateDateTime, 1000); // update every second
-</script>
-
-<script src="essays.js"></script>
-<script src="script.js"></script>
-
+  <!-- FOOTER (OUTSIDE layout — IMPORTANT) -->
   <footer class="site-footer">
-  <div class="footer-inner">
+    <div class="footer-inner">
 
-    <div class="footer-col">
-      <h3>About</h3>
-      <p>
-        This is a small personal archive. Essays, fragments,
-        thoughts written slowly and kept gently.
-      </p>
+      <div class="footer-col">
+        <h3>About</h3>
+        <p>
+          This is a small personal archive. Essays, fragments,
+          thoughts written slowly and kept gently.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Elsewhere</h3>
+        <ul>
+          <li><a href="#">spotify</a></li>
+          <li><a href="#">pinterest</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Subscribe</h3>
+        <p>Get a quiet note when something new appears.</p>
+
+        <div class="subscribe-row">
+          <input type="email" placeholder="your email" disabled>
+          <button disabled>subscribe</button>
+        </div>
+      </div>
+
     </div>
+  </footer>
 
-    <div class="footer-col">
-      <h3>Elsewhere</h3>
-      <ul>
-        <li><a href="#">spotify</a></li>
-        <li><a href="#">pinterest</a></li>
-      </ul>
-    </div>
+  <!-- CLOCK -->
+  <script>
+    function updateDateTime() {
+      document.getElementById("date").innerText =
+        new Date().toLocaleString();
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
 
-        <div class="footer-col">
-      <h3>Subscribe</h3>
-      <p>Get a quiet note when something new appears.</p>
-<div class="subscribe-row">
-  <input type="email" placeholder="your email" disabled>
-  <button disabled>subscribe</button>
-</div>
-
-    </div>
-
-  </div>
-</footer>
-
+  <script src="essays.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
