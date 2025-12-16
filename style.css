@@ -41,9 +41,18 @@ body {
 }
 
 .sidebar {
-  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  position: relative;
 }
 
+.sidebar::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 1px;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.12);
+}
 
 /* -------- RIGHT CONTENT (SCROLL) -------- */
 .content {
