@@ -29,7 +29,7 @@ body {
 
 .desc-flex {
   display: flex;
-  border: 10px;
+  margin-right: 60px;
 }
 
 /* floating divider */
