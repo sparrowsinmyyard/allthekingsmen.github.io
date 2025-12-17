@@ -17,7 +17,7 @@ body {
 
 /* -------- SIDEBAR -------- */
 .sidebar {
-  background: #b39e7d;
+  padding: 3rem 4rem;
   width: 35%;
   margin-left: -30px;
   position: sticky;
@@ -26,11 +26,6 @@ body {
   box-sizing: border-box;
   position: relative;
 }
-
-.sidebar-inner {
-  padding: 3rem 4rem;
-}
-
 
 /* floating divider */
 .sidebar::after {
