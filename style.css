@@ -19,8 +19,9 @@ body {
 .sidebar {
   width: 35%;
   padding: 3rem 1rem;
+  margin-left: -30px;
   position: sticky;
-  top: 2rem;
+  top: 1rem;
   height: fit-content;
   box-sizing: border-box;
   position: relative;
@@ -30,10 +31,10 @@ body {
 .sidebar::after {
   content: "";
   position: absolute;
-  top: 25%;
-  right: 0;
+  top: 15%;
+  right: 20px;
   width: 1px;
-  height: 50%;
+  height: 250%;
   background: rgba(0, 0, 0, 0.12);
 }
 
