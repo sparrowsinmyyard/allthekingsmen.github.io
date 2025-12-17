@@ -27,6 +27,11 @@ body {
   margin-bottom: 210px;
 }
 
+.desc-flex {
+  display: flex;
+  border: 10px;
+}
+
 /* floating divider */
 .sidebar::after {
   content: "";
