@@ -17,7 +17,7 @@ body {
 
 /* -------- SIDEBAR -------- */
 .sidebar {
-  padding: 3rem 4rem;
+  padding: 3rem 1rem;
   width: 35%;
   margin-left: -30px;
   position: sticky;
