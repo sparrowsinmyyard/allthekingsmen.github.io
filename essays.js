@@ -1,9 +1,9 @@
 const essays = [
   {
-    title: "Ember",
-    preview: "A quiet piece about warmth, endings, and things that refuse to go out.",
-    date: "2025-01-05",
-    file: "ember.html"
+    title: "Anchors",
+    preview: "Suicide ideation. An exploratory essay on what shit can feel like from a general pov where i hold myself from getting subjective.",
+    date: "2025-12-21",
+    file: "anchors.html"
   },
   {
     title: "Joe Biden",
