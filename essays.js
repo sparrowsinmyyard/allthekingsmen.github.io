@@ -1,13 +1,13 @@
 const essays = [
   {
     title: "Anchors",
-    preview: "Suicide ideation. An exploratory essay on what shit can feel like from a general pov where i hold myself from getting subjective.",
+    preview: "an introduction to suicide ideation. an exploratory essay on what shit can feel like from a general pov where I hold myself from getting subjective. no getting too personal here I promise",
     date: "2025-12-21",
     file: "anchors.html"
   },
   {
     title: "Glaz",
-    preview: "Thoughts on power, age, and the strange weight of leadership.",
+    preview: "on drowning and things taken without reason. what happens when you lose the ability to control what you build? a meditation on surrender, unfairness, and learning to observe. the eyes (almost) never lie",
     date: "2025-12-22",
     file: "glaz.html"
   },
