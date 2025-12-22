@@ -6,10 +6,10 @@ const essays = [
     file: "anchors.html"
   },
   {
-    title: "Joe Biden",
+    title: "Glaz",
     preview: "Thoughts on power, age, and the strange weight of leadership.",
-    date: "2025-01-02",
-    file: "joe-biden.html"
+    date: "2025-12-22",
+    file: "glaz.html"
   },
   {
     title: "Third Piece",
