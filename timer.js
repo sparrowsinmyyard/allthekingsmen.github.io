@@ -1,9 +1,14 @@
 function calculateReadingTime() {
-  const articleText = document.querySelector('article').innerText;
+  const article = document.querySelector('article');
+  if (!article) {
+    console.log('no article found');
+    return;
+  }
+  
+  const articleText = article.innerText;
   const wordCount = articleText.split(/\s+/).length;
   const readingTimeMinutes = Math.ceil(wordCount / 200);
   
-  // CREATE the reading time element
   const readingTimeDiv = document.createElement('div');
   readingTimeDiv.className = 'reading-time';
   readingTimeDiv.innerHTML = `
@@ -14,9 +19,11 @@ function calculateReadingTime() {
     <span>${readingTimeMinutes} min read</span>
   `;
   
-  // INSERT it after the h1
   const h1 = document.querySelector('article h1');
-  h1.insertAdjacentElement('afterend', readingTimeDiv);
+  if (h1) {
+    h1.insertAdjacentElement('afterend', readingTimeDiv);
+  }
 }
 
-calculateReadingTime();
+// wait for page to load
+document.addEventListener('DOMContentLoaded', calculateReadingTime);
