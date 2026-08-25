@@ -30,5 +30,12 @@ const essays = [
   date: "2026-08-25",
   file: "heyLuna.html"
 },
+
+  {
+  title: "Maybe We Glimmer",
+  preview: "say it with me- down with fatalism! a small story about the same, or maybe soemthing even bigger than that. i feel bad for soren... but he will figure it out :) trying my hand on flash fiction",
+  date: "2026-06-13",
+  file: "maybeWe.html"
+},
   
 ];
